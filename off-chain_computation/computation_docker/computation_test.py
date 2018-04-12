@@ -16,13 +16,13 @@ def getResults():
     return round(output)
 
 def bonus(earnings):
-    if earnings > 346:
+    if earnings > 350:
         return 100
-    elif 346 >= earnings > 314:
+    elif 350 >= earnings > 320:
         return 70
-    elif 314 >= earnings > 301:
+    elif 320 >= earnings > 300:
         return 50
-    elif 301 >= earnings > 290:
+    elif 300 >= earnings > 280:
         return 30
     else:
         return 20
