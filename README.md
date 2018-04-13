@@ -2,6 +2,8 @@
 
 Over the past few months I've been building a smart contract on Ethereum for crop insurance startup, [WorldCover](https://www.worldcovr.com/), to simulate their insurance contracts for farmers in Africa. In this repo I'll share some of my biggest takeaways and ones that I believe aren't well covered online.
 
+*Note*: I'm a junior developer who didn't come from a software background. The content in this repo is geared towards young developers or those new to blockchain.
+
 Questions? Shoot me an email at liamjweld@gmail.com
 
 ### Computing Data Off-Chain
@@ -50,10 +52,10 @@ If you're using JavaScript to test the output of your smart contract and see tha
 #### What if potential dApp users don't have an Ethereum wallet?
 They would interact with the dApp through a online account like you would with any Web 2.0 website. To facilitate this, create addresses for users who sign up and give ownership of these addresses to a single node. When a user is using your dApp their browser would connect to this node and you would map their user id to an address. You facilitate ether payments to cover gas cost for them on the backend, while charging them in USD via their online account. The dApp stays trustless (smart contracts are still running on Ethereum) but the user would rely on you to interact with the dApp and wouldn’t have control over their digital identity since they're giving your platform their account information.
 
-Another option, if your users have a bit of knowledge of Ethereum but don't have an address to send transactions, you can create an in-browser or in-app signature that's broadcasted to your server to be used as an input parameter to a contract function to prove that a user signed off on transaction even though they're not sending it themselves. You'd still be facilitating transactions for them, this just gives the user identity control. I've never done this but it seems logical in theory.
+Another option, if your users have a bit of knowledge of Ethereum but don't have an address to send transactions, you can create an in-browser or in-app signature that's broadcasted to your server to be used as an input parameter to a contract function to prove that a user signed off on transaction even though they're not sending it themselves (...and, inhale). You'd still be facilitating transactions for them, this just gives the user identity control. I've never done this but it seems logical in theory.
 
 #### It's new
-Be weary of articles or Stack Overflow posts that are over two years old as there's a good chance the platform has changed since then (especially if you're searching for a very granular question). Solidity is also limited in that it doesn't support certain things like fixed point numbers (only use uint) and as mentioned above, has limitations with respect to strings. Lastly, be prepared to find few resources online and technologies to assist you in your development process, it's still sort of the wild west out there!
+Be weary of articles or Stack Overflow posts that are over two years old as there's a good chance the platform has changed since then (especially if you're searching for a very specific question). Solidity is also limited in that it doesn't support certain things like fixed point numbers (only use uint) and as mentioned above, has limitations with respect to strings. Lastly, be prepared to find few resources online and technologies to assist you in your development process, it's still sort of the wild west out there!
 
 #### Check these out
 Here's some parts of the Solidity docs + other concepts that I found useful. Many of you may have already read these sections but if not, here you go!
